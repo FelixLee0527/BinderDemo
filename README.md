@@ -1,0 +1,5 @@
+# BinderDemo
+AIDL双向通信demo
+
+模拟空调功能，BinderServiceDemo类似于一个空调服务，BinderClientDemo类似于一个第三方apk，BinderClientDemo通过AIDL绑定BinderServiceDemo的服务，然后控制空调的各种功能，同时BinderServiceDemo
+在数据发生变化的时候将数据返回给BinderClientDemo，然后更新UI
