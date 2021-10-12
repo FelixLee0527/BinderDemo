@@ -1,0 +1,12 @@
+-dontobfuscate
+-dontoptimize
+
+-keepclassmembers class com.tw.binder.service.** { *; }
+-keep public interface com.tw.binder.service.** { *; }
+#保持 Parcelable 不被混淆
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+  public <fields>;
+  protect <fields>;
+  private <fields>;
+}
